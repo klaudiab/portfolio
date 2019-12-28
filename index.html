@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Klaudia Barwiolek" />
+    <meta name="keywords" content="Klaudia Barwiolek, frontend, developer, javascript, html, css"/>
+    <meta name="author" content="Klaudia Barwiolek" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery.viewportchecker.min.js"></script>
+    <title>Klaudia Barwiołek</title>
+</head>
+<body>
+<div class="preloader">
+    <svg
+            class="preloader__pic"
+            width="100%"
+            height="915"
+            viewBox="0 0 1436 915"
+            fill="none"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+                d="M0.5 852V0H1438V852C1437.33 862.333 1394 950 1278.5 898.36C1238.75 880.587 1174 809.36 1045.5 769.36C917 729.36 876.5 870 761.5 894.5C646.5 919 497.5 703.5 320 803.5C178 883.5 79.5 885.333 0.5 852Z"
+                fill="#387F99"
+        />
+    </svg>
+    <svg
+            class="preloader__text"
+            width="80%"
+            height="118"
+            viewBox="0 0 296 118"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+                d="M39.348 52.22C44.9933 52.22 49.6653 53.9233 53.364 57.33C57.0627 60.6393 58.9607 64.9707 59.058 70.324V115H45.334V74.996C45.1393 71.5893 44.1173 68.9127 42.268 66.966C40.4187 65.0193 37.6447 63.9973 33.946 63.9C30.442 63.9 27.2787 64.8733 24.456 66.82C21.6333 68.7667 19.3947 71.492 17.74 74.996C16.1827 78.5 15.404 82.3933 15.404 86.676V115H1.82599V1.85001H15.112V65.506C17.3507 61.5153 20.5627 58.3033 24.748 55.87C29.0307 53.4367 33.8973 52.22 39.348 52.22Z"
+                stroke="white"
+                stroke-width="2"
+        />
+        <path
+                d="M110.849 104.78C115.911 104.78 120.826 103.028 125.595 99.524L131.873 109.598C128.661 111.739 125.157 113.443 121.361 114.708C117.663 115.876 114.061 116.46 110.557 116.46C103.841 116.46 97.9525 115.097 92.8912 112.372C87.9272 109.549 84.0825 105.705 81.3572 100.838C78.6319 95.9713 77.2692 90.472 77.2692 84.34C77.2692 78.4027 78.7292 73.0007 81.6492 68.134C84.6665 63.17 88.7545 59.2767 93.9132 56.454C99.0719 53.534 104.717 52.074 110.849 52.074C118.733 52.074 125.303 54.41 130.559 59.082C135.913 63.6567 139.563 70.0807 141.509 78.354L93.6212 95.144C95.3732 98.1613 97.7092 100.546 100.629 102.298C103.647 103.953 107.053 104.78 110.849 104.78ZM109.827 62.878C104.279 62.878 99.7045 64.8247 96.1032 68.718C92.5019 72.6113 90.7012 77.5753 90.7012 83.61C90.7012 85.07 90.7499 86.1894 90.8472 86.968L126.033 73.974C124.573 70.6647 122.481 67.988 119.755 65.944C117.127 63.9 113.818 62.878 109.827 62.878Z"
+                stroke="white"
+                stroke-width="2"
+        />
+        <path
+                d="M171.955 1.85001V115H158.377V1.85001H171.955Z"
+                stroke="white"
+                stroke-width="2"
+        />
+        <path
+                d="M209.168 1.85001V115H195.59V1.85001H209.168Z"
+                stroke="white"
+                stroke-width="2"
+        />
+        <path
+                d="M227.547 84.194C227.547 78.2567 228.958 72.8547 231.781 67.988C234.701 63.024 238.691 59.1307 243.753 56.308C248.911 53.4853 254.703 52.074 261.127 52.074C267.551 52.074 273.245 53.4853 278.209 56.308C283.27 59.1307 287.163 62.9753 289.889 67.842C292.711 72.7087 294.123 78.1593 294.123 84.194C294.123 90.2287 292.711 95.728 289.889 100.692C287.163 105.559 283.27 109.403 278.209 112.226C273.147 115.049 267.356 116.46 260.835 116.46C254.508 116.46 248.814 115.146 243.753 112.518C238.691 109.793 234.701 105.997 231.781 101.13C228.958 96.2633 227.547 90.618 227.547 84.194ZM241.271 84.34C241.271 88.136 242.098 91.64 243.753 94.852C245.505 98.064 247.841 100.595 250.761 102.444C253.778 104.293 257.087 105.218 260.689 105.218C266.334 105.218 271.006 103.223 274.705 99.232C278.403 95.2413 280.253 90.2773 280.253 84.34C280.253 78.4027 278.403 73.4387 274.705 69.448C271.006 65.36 266.334 63.316 260.689 63.316C256.99 63.316 253.681 64.2893 250.761 66.236C247.841 68.0853 245.505 70.616 243.753 73.828C242.098 77.04 241.271 80.544 241.271 84.34Z"
+                stroke="white"
+                stroke-width="2"
+        />
+    </svg>
+</div>
+<header class="site-header">
+    <h1 class="site-header__logo">
+        <span class="semi-transparent">Klaudia</span><br /><span>Barwiołek</span
+    >
+    </h1>
+    <nav class="site-nav">
+        <ul class="site-nav__ul">
+            <li class="site-nav__li">
+                <a href="#about-me" class="site-nav__link">O mnie</a>
+            </li>
+            <li class="site-nav__li">
+                <a href="#skills" class="site-nav__link">Umiejętności</a>
+            </li>
+            <li class="site-nav__li">
+                <a href="#portfolio" class="site-nav__link">Prejekty</a>
+            </li>
+            <li class="site-nav__li">
+                <a href="#contact" class="site-nav__link">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="hamburger">
+        <span class="sr-only">Menu button</span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+    </button>
+</header>
+
+<main>
+    <section class="hero">
+        <span aria-hidden="true"><i class="hero__bg-icon icon fas fa-code"></i></span>
+
+        <div class="hero__text-wrapper">
+            <h2 class="hero__heading">Klaudia Barwiołek</h2>
+            <h3 class="hero__sub-heading">
+                Front-End Developer
+            </h3>
+        </div>
+        <div class="scroll-down__wrapper">
+            <a class="scroll-down" href="#about-me"
+            ><span class="scroll-down__line"></span>
+                <span class="scroll-down__line"></span>
+                <span class="scroll-down__line"></span>Scroll<span class="sr-only">
+              down to about me section</span
+                ></a
+            >
+        </div>
+    </section>
+    <section id="about-me" class="about-me">
+        <div class="good-looking-guy">
+            <img
+                    src="image1.jpeg"
+                    alt=""
+                    class="good-looking-guy__img"
+            />
+        </div>
+        <h2 class="about-me__heading">O mnie</h2>
+        <p class="about-me__text" data-animate="bounceInLeft">
+            Coś tu o sobie kiedyś napiszę , jeszcze nie wiem co :D
+        </p>
+        <a class="about-me__btn" href="#contact">Kontakt!</a>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="skills__heading">Umiejętności</h2>
+
+        <h3 class="skills__self-esteem">Bardzo dobra znajomość</h3>
+        <div class="skills__group animated fadeInDown">
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-html5"></i>
+                <span class="skill__name">
+                        HTML
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-css3-alt"></i>
+                <span class="skill__name">
+                        CSS
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-sass"></i>
+                <span class="skill__name">
+                        SASS
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-less"></i>
+                <span class="skill__name">
+                        LESS
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-mobile-alt"></i>
+                <span class="skill__name">
+                        RWD
+                    </span>
+            </div>
+        </div>
+
+        <h3 class="skills__self-esteem">Dobra znajomość</h3>
+        <div class="skills__group">
+          
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-bootstrap"></i>
+                <span class="skill__name">
+                        Bootsrap
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-wordpress"></i>
+                <span class="skill__name">
+                        WordPress
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-database"></i>
+                <span class="skill__name">
+                        SQL
+                    </span>
+            </div>
+        </div>
+
+        <h3 class="skills__self-esteem">Podstawowa znajomość</h3>
+        <div class="skills__group">
+
+              <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-js-square"></i>
+                <span class="skill__name">
+                        JavaScript
+                    </span>
+            </div>
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-php"></i>
+                <span class="skill__name">
+                        PHP
+                    </span>
+            </div>
+            
+            <div class="skill" data-animate="fadeIn">
+                <i class="skill__icon icon fab fa-git"></i>
+                <span class="skill__name">
+                        Git
+                    </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__heading">Projekty</h2>
+        <div class="project">
+            <a
+                    href="https://klaudiab.github.io/portfolio/"
+                    rel="noopener"
+                    target="_blank"
+                    class="project__box-link"
+            >
+                <figure class="project__image">
+                    <img
+                            class="project__thumbnail"
+                            src="portfolio.png"
+                            alt=""
+                    />
+                    <figcaption class="project__figcaption">
+                        <h3 class="project__title">
+                            Stona stworzona w celu prezentacji moich projektów.
+                        </h3>
+                    </figcaption>
+                </figure>
+                <div class="project__overlay"></div>
+            </a>
+            <div class="project__links">
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://klaudiab.github.io/portfolio/"
+                >Live</a
+                >
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://github.com/klaudiab"
+                >Code</a
+                >
+            </div>
+        </div>
+        <div class="project">
+            <a
+                    href="https://klaudiab.github.io/fast-food/"
+                    rel="noopener"
+                    target="_blank"
+                    class="project__box-link"
+            >
+                <figure class="project__image">
+                    <img
+                            class="project__thumbnail"
+                            src="fast-food.png"
+                            alt=""
+                    />
+                    <figcaption class="project__figcaption">
+                        <h3 class="project__title">
+                            Stona stworzona w celach edukacyjnych.
+                        </h3>
+                    </figcaption>
+                </figure>
+                <div class="project__overlay"></div>
+            </a>
+            <div class="project__links">
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://klaudiab.github.io/fast-food/"
+                >Live</a
+                >
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://github.com/klaudiab/fast-food/"
+                >Code</a
+                >
+            </div>
+        </div>
+        <div class="project">
+            <a
+                    href="https://klaudiab.github.io/less/"
+                    rel="noopener"
+                    target="_blank"
+                    class="project__box-ink"
+            >
+                <figure class="project__image">
+                    <img class="project__thumbnail" src="less.png" alt="" />
+                    <figcaption class="project__figcaption">
+                        <h3 class="project__title">
+                            Stona stworzona w celach edukacyjnych.
+                        </h3>
+                    </figcaption>
+                </figure>
+                <div class="project__overlay"></div>
+            </a>
+            <div class="project__links">
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://klaudiab.github.io/less/"
+                >Live</a
+                >
+                <a
+                        class="hover-line"
+                        rel="noopener"
+                        target="_blank"
+                        href="https://github.com/klaudiab/less/"
+                >Code</a
+                >
+            </div>
+        </div>
+
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="contact__heading">Kontakt</h2>
+        <p class="contact__text">
+            Jeśli chcesz dodatkowych informacji,<br />napisz do mnie
+            <a class="hover-line" href="mailto:klaudiabarwiolek@gmail.com"
+            >klaudiabarwiolek@gmail.com</a
+            ><br />
+            albo użyj formularza poniżej.
+        </p>
+        <div class="contact__wrapper">
+            <div class="contact__form">
+                <form
+                        class="form"
+                        action="https://formspree.io/klaudiabarwiolek@gmail.com"
+                        method="POST"
+                >
+                    <fieldset>
+                        <legend class="sr-only">Form contents</legend>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="form__field">
+                            <label class="form__label" for="email">Email</label>
+                            <input
+                                    id="email"
+                                    type="email"
+                                    class="form__input"
+                                    required
+                                    placeholder="przykladowy@mail.com"
+                                    autocomplete="email"
+                                    name="_replyto"
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="subject">Temat</label>
+                            <input
+                                    id="subject"
+                                    type="text"
+                                    class="form__input"
+                                    required
+                                    placeholder="Temat"
+                                    name="subject"
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="message">Wiadomość</label>
+                            <textarea
+                                    id="message"
+                                    class="form__input form__textarea"
+                                    required
+                                    placeholder="Wiadomość"
+                                    name="message"
+                            ></textarea>
+                        </div>
+                        <input class="form__submit-btn" type="submit" value="Wyślij!" />
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer__text">
+            <p>&copy; Copyright All rights reserved 2019.</p>
+            <p>
+                Coded with
+                <span aria-label="love" role="img">&#10084;&#65039;</span> by
+                <a
+                        href="https://github.com/klaudiab"
+                        title="It's finally time to check out my GitHub profile"
+                        target="_blank"
+                        rel="noopener"
+                        class="hover-line"
+                >Klaudia Barwiołek.</a
+                >
+            </p>
+            <p>Thank you for visiting my page.</p>
+        </div>
+    </footer>
+</main>
+
+
+
+<script>
+    $(document).ready(function(){
+
+        $('*[data-animate]').addClass('hide').each(function(){
+            $(this).viewportChecker({
+                classToAdd: 'show animated ' + $(this).data('animate'),
+                classToRemove: 'hide',
+                offset: 200
+            });
+        });
+
+
+
+        $('.toggle-menu').click (function(){
+            $(this).toggleClass('active');
+            $('#menu').toggleClass('open');
+        });
+
+    });
+
+    // DOM SELECTORS
+    const hamburgerBtn = document.querySelector(".hamburger");
+    const siteNav = document.querySelector(".site-nav");
+    const navLinks = document.querySelectorAll(".site-nav__link");
+    const highlight = document.createElement("span");
+    const aboutMe = document.querySelector(".about-me");
+    const aboutMeText = document.querySelector(".about-me__text");
+    const contact = document.querySelector(".contact");
+    const contactText = document.querySelector(".contact__text");
+    const contactForm = document.querySelector(".contact__form");
+    const skillsSection = document.querySelector(".skills");
+    const skills = document.querySelectorAll(".skill");
+    const preloader = document.querySelector(".preloader");
+
+    // throttle
+    function throttle(fn, wait) {
+        let time = Date.now();
+        return function() {
+            if (time + wait - Date.now() < 0) {
+                fn();
+                time = Date.now();
+            }
+        };
+    }
+
+    // scroll function
+    const easeInCubic = function(t) {
+        return t * (2 - t);
+    };
+    const scrollToElem = (
+        startTime,
+        currentTime,
+        duration,
+        scrollEndElemTop,
+        startScrollOffset
+    ) => {
+        const runtime = currentTime - startTime;
+        let progress = runtime / duration;
+        progress = Math.min(progress, 1);
+        const ease = easeInCubic(progress);
+        window.scroll(0, startScrollOffset + scrollEndElemTop * ease);
+        if (runtime < duration) {
+            requestAnimationFrame(timestamp => {
+                const currentTime = timestamp || new Date().getTime();
+                scrollToElem(
+                    startTime,
+                    currentTime,
+                    duration,
+                    scrollEndElemTop,
+                    startScrollOffset
+                );
+            });
+        }
+    };
+
+    const scrollLinks = document.querySelectorAll('a[href^="#"]');
+    scrollLinks.forEach(scrollLink => {
+        scrollLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            const scrollEndElem = document.querySelector(
+                scrollLink.getAttribute("href")
+            );
+            const anim = requestAnimationFrame(timestamp => {
+                const stamp = timestamp || new Date().getTime();
+                const duration = 700;
+                const offset = 100;
+                const start = stamp;
+                const startScrollOffset = window.pageYOffset;
+                const scrollEndElemTop =
+                    scrollEndElem.getBoundingClientRect().top - offset;
+
+                scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+            });
+        });
+    });
+
+    // Hamburger line color change
+    function changeHamburgerLineColor() {
+        const HAMBURGER_BOTTOM = 64;
+        const aboutMeHeight = aboutMe.clientHeight;
+        const aboutMeDistanceToTopMinusHamburger =
+            aboutMe.getBoundingClientRect().top - HAMBURGER_BOTTOM;
+        const aboutMeOffsetTop = aboutMe.offsetTop;
+
+        const contactDistanceToTopMinusHamburger =
+            contact.getBoundingClientRect().top - HAMBURGER_BOTTOM;
+        const contactOffsetTop = contact.offsetTop;
+        const hasClass = hamburgerBtn.classList.contains("blackline");
+
+        if (
+            aboutMeDistanceToTopMinusHamburger <= 0 &&
+            scrollY < aboutMeOffsetTop + aboutMeHeight &&
+            !hasClass
+        ) {
+            hamburgerBtn.classList.add("blackline");
+        }
+        if (aboutMeDistanceToTopMinusHamburger > 0 && hasClass) {
+            hamburgerBtn.classList.remove("blackline");
+        }
+        if (
+            contactDistanceToTopMinusHamburger <= 0 &&
+            scrollY > contactOffsetTop - HAMBURGER_BOTTOM &&
+            hasClass
+        ) {
+            hamburgerBtn.classList.remove("blackline");
+        }
+        if (
+            contactDistanceToTopMinusHamburger > 0 &&
+            scrollY > aboutMeOffsetTop + aboutMeHeight &&
+            !hasClass
+        ) {
+            hamburgerBtn.classList.add("blackline");
+        }
+    }
+
+    function animateItems() {
+        const windowHeight = window.innerHeight;
+        const aboutMeTextDistanceToTop = aboutMeText.getBoundingClientRect().top;
+        const skillsSectionDistanceToTop = skillsSection.getBoundingClientRect().top;
+        const contactTextDistanceToTop = contactText.getBoundingClientRect().top;
+        // if aboutMeText is x% in viewport
+        const aboutMeTextVisible =
+            aboutMeTextDistanceToTop + windowHeight * 0.3 < windowHeight;
+        const skillsSectionVisible =
+            skillsSectionDistanceToTop + windowHeight * 0.5 < windowHeight;
+        const contactTextVisible =
+            contactTextDistanceToTop + windowHeight * 0.4 < windowHeight;
+
+        // if visible add class
+        if (aboutMeTextVisible && !aboutMeText.classList.contains("fade-in")) {
+            aboutMeText.classList.add("fade-in");
+        }
+
+        if (skillsSectionVisible && !skills[0].classList.contains("fade-in")) {
+            skills.forEach((skill, index) =>
+                setTimeout(() => {
+                    skill.classList.add("fade-in");
+                }, 85 * index)
+            );
+        }
+        if (contactTextVisible && !contactText.classList.contains("slide-left")) {
+            contactText.classList.add("slide-left");
+            contactForm.classList.add("slide-right");
+        }
+    }
+
+    function callScrollFunctions() {
+        changeHamburgerLineColor();
+        animateItems();
+    }
+
+    callScrollFunctions();
+
+    window.addEventListener("scroll", throttle(callScrollFunctions, 50));
+
+    // Nav slide in
+    hamburgerBtn.addEventListener("click", function() {
+        this.classList.toggle("is-active");
+        this.classList.contains("is-active")
+            ? siteNav.classList.add("show")
+            : siteNav.classList.remove("show");
+    });
+
+    // highlight follow nav links
+    highlight.classList.add("highlight");
+    siteNav.append(highlight);
+
+    function showHighlightLink() {
+        const linkCoords = this.getBoundingClientRect();
+        highlight.style.opacity = "1";
+        highlight.style.top = "-1rem";
+        highlight.style.left = `${linkCoords.left + linkCoords.width / 2}px`;
+    }
+
+    function hideHighlightLink() {
+        highlight.style.opacity = "0";
+    }
+
+    navLinks.forEach(link =>
+        link.addEventListener("mouseenter", showHighlightLink)
+    );
+    navLinks.forEach(link =>
+        link.addEventListener("mouseleave", hideHighlightLink)
+    );
+</script>
+
+</body>
+</html>
+
+
