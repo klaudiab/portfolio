@@ -1254,21 +1254,7 @@ main {
     -ms-grid-column-span: 4;
     grid-column: 1/5;
   }
-  .portfolio .project:nth-of-type(4n) {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
-    grid-column: 5/9;
-  }
-  .portfolio .project:nth-of-type(5n) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/5;
-  }
-  .portfolio .project:nth-of-type(6n) {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
-    grid-column: 5/9;
-  }
+
 }
 
 @media (min-width: 62.5em) {
